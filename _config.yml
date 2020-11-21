@@ -1,0 +1,33 @@
+title: Anti Jessica Mullins
+description: "Please fire the NVC international student advisor Jessica Mullins"
+author:
+  name: "NVC intl students"
+  email: "switchoverflow@gmail.com"
+  url: "antijessicamullins.com"
+
+# baseurl: /
+url: "http://antijessicamullins.com/"
+
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+owner : "NVC"
+year : "2020"
